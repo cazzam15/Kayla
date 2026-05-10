@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dreamy Balloons Glasgow - Bespoke Balloon Styling & Event Decor. Beautiful balloon arches, organic garlands, gender reveals & more.">
+  <title>Dreamy Balloons Glasgow | Bespoke Balloon Styling</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', system-ui, sans-serif;
+    }
+    .balloon-float {
+      animation: float 6s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-25px); }
+    }
+    .hero-bg {
+      background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://picsum.photos/id/1015/2000/1200');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="bg-pink-50 text-gray-800">
+
+  <!-- Hero -->
+  <section class="hero-bg h-screen flex items-center text-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h1 class="text-6xl md:text-7xl font-bold mb-4 tracking-tight">
+        Dreamy Balloons<br>Glasgow
+      </h1>
+      <p class="text-2xl md:text-3xl mb-8">Bespoke Balloon Styling & Event Décor</p>
+      <a href="#contact" class="inline-block bg-white text-pink-600 font-semibold px-10 py-4 rounded-full text-xl hover:bg-pink-100 transition">
+        Book Your Event
+      </a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12 text-pink-600">Our Services</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-pink-50 p-8 rounded-3xl text-center balloon-float">
+          <i class="fa-solid fa-archway text-5xl text-pink-500 mb-4"></i>
+          <h3 class="text-2xl font-semibold mb-3">Balloon Arches & Garlands</h3>
+          <p class="text-gray-600">Stunning organic designs for entrances, ceilings & walls.</p>
+        </div>
+        <div class="bg-pink-50 p-8 rounded-3xl text-center balloon-float" style="animation-delay: 1s;">
+          <i class="fa-solid fa-baby text-5xl text-pink-500 mb-4"></i>
+          <h3 class="text-2xl font-semibold mb-3">Gender Reveals & Birthdays</h3>
+          <p class="text-gray-600">Magical setups your guests will never forget.</p>
+        </div>
+        <div class="bg-pink-50 p-8 rounded-3xl text-center balloon-float" style="animation-delay: 2s;">
+          <i class="fa-solid fa-heart text-5xl text-pink-500 mb-4"></i>
+          <h3 class="text-2xl font-semibold mb-3">Weddings & Corporate</h3>
+          <p class="text-gray-600">Elegant centrepieces and full venue styling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Teaser -->
+  <section class="py-20 bg-pink-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">Our Creations</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <!-- Replace these placeholder images with your real photos later -->
+        <img src="https://picsum.photos/id/1015/600/600" class="rounded-3xl shadow-lg hover:scale-105 transition">
+        <img src="https://picsum.photos/id/133/600/600" class="rounded-3xl shadow-lg hover:scale-105 transition">
+        <img src="https://picsum.photos/id/201/600/600" class="rounded-3xl shadow-lg hover:scale-105 transition">
+        <img src="https://picsum.photos/id/251/600/600" class="rounded-3xl shadow-lg hover:scale-105 transition">
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-8">Making Moments Magical in Glasgow</h2>
+      <p class="max-w-2xl mx-auto text-lg text-gray-600">
+        We create bespoke balloon displays that turn ordinary events into extraordinary memories. 
+        From intimate gatherings to big celebrations — every design is made with love in Glasgow.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact / Booking -->
+  <section id="contact" class="py-20 bg-pink-600 text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-8">Let's Create Something Dreamy</h2>
+      <p class="text-xl mb-10">Tell us about your event and we'll bring your vision to life</p>
+      
+      <form class="max-w-lg mx-auto space-y-6" onsubmit="alert('Thank you! We will contact you soon 💕'); return false;">
+        <input type="text" placeholder="Your Name" class="w-full px-6 py-4 rounded-2xl text-black" required>
+        <input type="email" placeholder="Email Address" class="w-full px-6 py-4 rounded-2xl text-black" required>
+        <input type="tel" placeholder="Phone Number" class="w-full px-6 py-4 rounded-2xl text-black">
+        <textarea placeholder="Tell us about your event (date, type, number of guests...)" rows="5" class="w-full px-6 py-4 rounded-2xl text-black" required></textarea>
+        <button type="submit" class="w-full bg-white text-pink-600 font-bold py-5 rounded-2xl text-xl hover:bg-pink-100 transition">
+          Send Enquiry 🎈
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-10 text-center">
+    <p class="text-2xl font-semibold mb-2">Dreamy Balloons Glasgow</p>
+    <p>Glasgow • Scotland</p>
+    <p class="mt-6">Made with love for special moments 💕</p>
+  </footer>
+
+</body>
+</html>
